@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="defaut.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <header>
+        <h1>Hangman</h1>
+    </header>
+    <main>
+
+        <div id="container">
+            <div id="hangman">
+                
+            </div>
+            
+            <ul id="word"></ul>
+            <div class="answer" style="display: none;"></div>
+            <form id="form" style="display: block;">
+                <label for="texte-rempli">Enter a letter or guest a word</label>
+                <div>
+                    <input type="text" id="input" placeholder="Letter / Word">
+                    <button>Go</button>
+                </div>
+            </form>
+            <div id="section-letters">
+                <ul>
+
+                </ul>
+            </div>
+            <div id="errors">
+                <h2>Errors</h2>
+                <div id="score">
+
+                </div>
+                <div id="chosen-letter">
+                    <p></p>
+                </div>
+                <!-- <div id="restart">
+                    <button>Restart</button>
+                </div> -->
+            </div>
+           
+        </div>
+        
+    </main>
+
+    <footer></footer>
+    <script src="hangman.js"></script>
+
+</body>
+</html>

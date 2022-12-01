@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;600&display=swap');
+/* font-family: 'Yanone Kaffeesatz', sans-serif; */
+
+:root {
+    /* Global Colors */
+    --background-color: #DFF6FF;
+    --primary-color: #06283D;
+    --secondary-color: #256D85;
+
+    /* Global Fonts */
+    --primary-font: 'Yanone Kaffeesatz', sans-serif;
+    --secondary-font: 'Yanone Kaffeesatz', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    font-size: 1.1rem;
+}
+
+header, footer{
+    background: var(--primary-color);
+    color: var(--happy-color);
+}
+
+h1 {
+    text-align: center;
+    color: var(--background-color);
+    font-size: 3em;
+    margin: 1rem 0;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+#errors h2 {
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#section-letters ul li {
+    padding: 7px 10px 4px 10px;
+    margin: 0 2px 0px 2px;
+    border-radius: 5px;
+}
+
+#section-letters ul li:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+#hangman {
+    margin-top: 40px;
+    width: 250px;
+    height: 300px;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+#score p {
+    margin: 0px;
+}
+
+form {
+    max-width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 30px 0px;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+label {
+    font-size: 2em;
+    color: var(--background-color);
+    margin-bottom: 1rem;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    padding: 0;
+    width: 60%;
+    margin-right: 0.8rem;
+    font-size: 1.5em;
+    padding: 7px 0px 3px 0px;
+    text-align: center;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+
+button {
+    padding: 5px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+    color: var(--background-color);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.disable {
+    opacity: 0.5;
+}
+
+/* Teste */
