@@ -56,6 +56,7 @@ const endGame = () => {
     document.body.style.backgroundColor = "red";
     form.remove();
     word.remove();
+    sectionLetters.remove();
     result.innerHTML = `<h2>Game over</h2><h3>The word was : ${randomWord}</h3>`;
     result.style.display = "block";
 }
