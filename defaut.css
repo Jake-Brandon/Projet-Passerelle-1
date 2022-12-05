@@ -43,6 +43,14 @@ h2 {
     font-size: 2.5rem;
 }
 
+h3 {
+    color: var(--background-color);
+}
+
+.endgame {
+    margin: 0px;
+}
+
 #errors h2 {
     font-size: 1.5rem;
     margin: 0px;
@@ -87,7 +95,7 @@ li {
     margin: auto;
 }
 
-#score p {
+#score p, #chosen-letter p {
     margin: 0px;
 }
 
@@ -138,6 +146,10 @@ button:hover {
     cursor: pointer;
 }
 
+#restart button {
+    margin: 15px 0px;
+}
+
 footer {
     font-family: 'roboto', sans-serif;
     font-weight: 700;
@@ -148,4 +160,8 @@ footer {
 
 .disable {
     opacity: 0.5;
+}
+
+.color-white {
+    color: var(--background-color);
 }

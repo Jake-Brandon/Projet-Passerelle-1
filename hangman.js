@@ -10,6 +10,7 @@ let result          = document.querySelector(".answer");
 let score           = document.querySelector("#score");
 let chosenLetter    = document.querySelector("#chosen-letter");
 let sectionLetters  = document.querySelector("#section-letters");
+// let errors           = document.querySelector("#errors");
 
 // Variable
 let randomIndex;
@@ -49,16 +50,21 @@ const winGame = () => {
     word.textContent = randomWord;
     result.innerHTML = `<h2>You win</h2>`;
     result.style.display = "block";
+    restart.style.display = "block";
 }
 
 const endGame = () => {
-    // word.textContent = randomWord;
     document.body.style.backgroundColor = "red";
     form.remove();
     word.remove();
     sectionLetters.remove();
-    result.innerHTML = `<h2>Game over</h2><h3>The word was : ${randomWord}</h3>`;
+    errors.querySelector('h2').className = 'color-white';
+    errors.querySelector('p').className = 'color-white';
+    chosenLetter.querySelector('p').className = 'color-white';
+    result.innerHTML = `<h2 class='endgame'>Game over</h2>
+                        <h3>The word was : ${randomWord}</h3>`;
     result.style.display = "block";
+    restart.style.display = "block";
 }
 
 const checkLetter = () => {
@@ -76,7 +82,6 @@ const checkLetter = () => {
 
             if(randomWord[i] == answer.toUpperCase()) {
                 items[i].textContent = hiddenWord[i].replace('_', randomWord[i]);
-                sectionLetters.querySelectorAll('li').style.backgroundColor = "green";
             }
 
             if(word.textContent == randomWord) {
@@ -146,7 +151,9 @@ sectionLetters.querySelector('ul').addEventListener('click', (evt) => {
     }
 });
 
-//restart.querySelector('button').addEventListener('click', relaunch);
+restart.querySelector('button').addEventListener('click', () => {
+    window.location.reload();
+});
 
 const init = () => {
     
